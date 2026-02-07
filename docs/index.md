@@ -45,4 +45,4 @@ EToolKit is licensed under the EToolKit License Agreement. Please refer to the o
 ## Support Contact
 For any questions or support, please contact:
 - Email: [moh.tarek29@gmail.com](mailto:moh.tarek29@gmail.com)
-- LinkedIn: [Moh Tarek](https://www.linkedin.com/in/moh-tarek29/)
+- LinkedIn: [Mohamed Tarek](https://www.linkedin.com/in/moh-tarek29/)
