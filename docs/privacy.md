@@ -22,7 +22,7 @@ We adopt appropriate data collection, storage, and processing practices and secu
 ## Contact Information
 For any questions regarding this privacy policy, please contact us at:
 - **Support Email:** moh.tarek29@gmail.com  
-- **Developer/Publisher:** Moh Tarek 
+- **Developer/Publisher:** Mohamed Tarek 
 [LinkedIn Profile](https://www.linkedin.com/in/moh-tarek29/)
 
 ## Changes to This Privacy Policy
