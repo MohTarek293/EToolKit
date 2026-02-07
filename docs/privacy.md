@@ -4,5 +4,5 @@ EToolKit does not collect any personal information, model data, analytics, or te
 
 ## Contact Information:
 - **Support Email:** moh.tarek29@gmail.com  
-- **Developer:** Moh Tarek  
+- **Developer:** Mohamed Tarek  
 - **LinkedIn:** [moh-tarek29](https://www.linkedin.com/in/moh-tarek29/)  
