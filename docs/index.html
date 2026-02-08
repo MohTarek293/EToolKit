@@ -1,116 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EToolKit Documentation</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EToolKit for Revit — Documentation</title>
+  <meta name="description" content="EToolKit for Autodesk Revit — installation, compatibility, features, and support." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2, h3 { margin-top: 24px; }
-    nav {
-      padding: 14px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      background: #fafafa;
-      margin: 20px 0;
-    }
-    nav a {
-      margin-right: 14px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #0b57d0;
-    }
+    :root { color-scheme: light; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #111; background: #fff; line-height: 1.55; }
+    header { border-bottom: 1px solid #e9e9e9; background: #fff; position: sticky; top: 0; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 18px 18px; }
+    .brand { display: flex; align-items: baseline; gap: 12px; }
+    .brand h1 { font-size: 20px; margin: 0; }
+    .brand span { color: #666; font-size: 14px; }
+    nav { margin-top: 10px; display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a { text-decoration: none; font-weight: 600; color: #0b57d0; }
     nav a:hover { text-decoration: underline; }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 14px 16px;
-      margin: 14px 0;
-      background: white;
-    }
-    .small { color: #666; font-size: 14px; }
+    main { padding: 26px 0 40px; }
+    h2 { margin-top: 26px; font-size: 18px; }
+    h3 { margin-top: 18px; font-size: 16px; }
+    .card { border: 1px solid #ededed; border-radius: 14px; padding: 16px 16px; margin: 14px 0; background: #fff; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .muted { color: #666; }
+    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; border: 1px solid #e6e6e6; background: #fafafa; font-size: 12px; color: #444; }
+    .list { margin: 10px 0 0 18px; }
+    footer { border-top: 1px solid #e9e9e9; padding: 18px 0; color: #666; font-size: 13px; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 8px; }
   </style>
 </head>
+
 <body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <h1>EToolKit for Revit</h1>
+        <span class="muted">Documentation & Support</span>
+      </div>
+      <nav aria-label="Primary">
+        <a href="index.html">Documentation</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="eula.html">EULA</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>EToolKit Revit Add-in</h1>
-  <p>Welcome to the official documentation for <b>EToolKit</b>.</p>
+  <main class="wrap">
+    <section class="card">
+      <span class="pill">Revit Add-in</span>
+      <h2 style="margin-top:10px;">Overview</h2>
+      <p>
+        <strong>EToolKit</strong> is a productivity add-in for <strong>Autodesk Revit</strong> designed to help teams validate common issues,
+        improve documentation quality, and automate repetitive drafting/model checks.
+      </p>
+      <p class="muted" style="margin-bottom:0;">
+        This site provides installation guidance, feature summaries, and support/contact details for Autodesk App Store review and end users.
+      </p>
+    </section>
 
-  <nav>
-    <a href="index.html">Help</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="eula.html">EULA</a>
-  </nav>
+    <section class="grid">
+      <div class="card">
+        <h2>Compatibility</h2>
+        <ul class="list">
+          <li>Supported Revit versions: <strong>2022 – 2024</strong></li>
+          <li>Platform: <strong>Windows</strong></li>
+        </ul>
+        <p class="muted">If you require support for another version, please contact support.</p>
+      </div>
 
-  <h2>Revit Compatibility</h2>
-  <p>EToolKit is compatible with Revit versions <b>2022 through 2024</b>.</p>
+      <div class="card">
+        <h2>Installation</h2>
+        <ol class="list">
+          <li>Download and run the EToolKit installer.</li>
+          <li>Follow the on-screen installation steps.</li>
+          <li>Launch Revit → open the <strong>Add-ins</strong> tab → locate <strong>EToolKit</strong>.</li>
+        </ol>
+        <p class="muted">EToolKit loads automatically once installed.</p>
+      </div>
+    </section>
 
-  <h2>Installation Instructions</h2>
-  <ol>
-    <li>Download the EToolKit installer from the official website.</li>
-    <li>Run the installer and follow the on-screen instructions.</li>
-    <li>Once installed, launch Revit, and EToolKit will automatically be available in the Add-ins tab.</li>
-  </ol>
+    <section class="card">
+      <h2>Getting Started</h2>
+      <ol class="list">
+        <li>Open any Revit project.</li>
+        <li>Go to <strong>Add-ins</strong> → <strong>EToolKit</strong>.</li>
+        <li>Select a tool from the EToolKit panel and follow the prompts.</li>
+      </ol>
+      <p class="muted">
+        Tip: For best results, save your project before running validation or batch operations.
+      </p>
+    </section>
 
-  <h2>Getting Started Guide</h2>
-  <ol>
-    <li>Open Revit and navigate to the Add-ins tab.</li>
-    <li>Select EToolKit to access the various tools.</li>
-    <li>Choose a tool from the dropdown to start exploring its functionalities.</li>
-  </ol>
+    <section class="card">
+      <h2>Tools Included</h2>
 
-  <h2>Detailed Documentation for All Tools</h2>
+      <h3>1) Circuit Checker</h3>
+      <p><strong>Purpose:</strong> Validates electrical circuits in the current project to ensure they are consistently configured.</p>
+      <p><strong>Where to find it:</strong> Add-ins → EToolKit → Circuit Checker.</p>
 
-  <div class="card">
-    <h3>1. Circuit Checker</h3>
-    <p><b>Description:</b> Validates the circuits in your Revit project to ensure they are properly configured.</p>
-    <p><b>Usage:</b> Navigate to the EToolKit menu and select Circuit Checker.</p>
-  </div>
+      <h3>2) Tags & Dimensions Checker</h3>
+      <p><strong>Purpose:</strong> Helps identify common documentation issues related to tags and dimensions.</p>
+      <p><strong>Where to find it:</strong> Add-ins → EToolKit → Tags & Dimensions Checker.</p>
 
-  <div class="card">
-    <h3>2. Tags & Dimensions Checker</h3>
-    <p><b>Description:</b> Checks for consistency and correctness in tags and dimensions across your project.</p>
-    <p><b>Usage:</b> Access Tags & Dimensions Checker under the EToolKit menu.</p>
-  </div>
+      <h3>3) Fillet Lines</h3>
+      <p><strong>Purpose:</strong> Creates fillet lines to improve clarity and presentation in drawings.</p>
+      <p><strong>Where to find it:</strong> Add-ins → EToolKit → Fillet Lines.</p>
 
-  <div class="card">
-    <h3>3. Fillet Lines</h3>
-    <p><b>Description:</b> Automatically creates fillet lines in your design for cleaner presentations.</p>
-    <p><b>Usage:</b> Select Fillet Lines from the EToolKit menu to activate.</p>
-  </div>
+      <h3>4) Host Wizard</h3>
+      <p><strong>Purpose:</strong> Assists with managing and resolving host-related issues for elements.</p>
+      <p><strong>Where to find it:</strong> Add-ins → EToolKit → Host Wizard.</p>
 
-  <div class="card">
-    <h3>4. Host Wizard</h3>
-    <p><b>Description:</b> Assists in managing host elements in your project efficiently.</p>
-    <p><b>Usage:</b> Use the Host Wizard tool found in the EToolKit menu.</p>
-  </div>
+      <h3>5) Levels Fix</h3>
+      <p><strong>Purpose:</strong> Helps identify and correct common inconsistencies in level assignments.</p>
+      <p><strong>Where to find it:</strong> Add-ins → EToolKit → Levels Fix.</p>
 
-  <div class="card">
-    <h3>5. Levels Fix</h3>
-    <p><b>Description:</b> Fixes inconsistencies in levels within your Revit models.</p>
-    <p><b>Usage:</b> Activate Levels Fix from the EToolKit dropdown.</p>
-  </div>
+      <h3>6) Renumbering</h3>
+      <p><strong>Purpose:</strong> Renumbers selected elements according to user-defined or standard rules.</p>
+      <p><strong>Where to find it:</strong> Add-ins → EToolKit → Renumbering.</p>
+    </section>
 
-  <div class="card">
-    <h3>6. Renumbering</h3>
-    <p><b>Description:</b> Provides automatic renumbering of elements according to your specified rules.</p>
-    <p><b>Usage:</b> Choose Renumbering from the EToolKit menu to start the process.</p>
-  </div>
+    <section class="card">
+      <h2>Support</h2>
+      <p>If you need assistance, please contact:</p>
+      <ul class="list">
+        <li><strong>Email:</strong> <a href="mailto:moh.tarek29@gmail.com">moh.tarek29@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/moh-tarek29/" target="_blank" rel="noopener">Mohamed Tarek</a></li>
+      </ul>
+      <p class="muted" style="margin-bottom:0;">
+        Please include your Revit version, a brief description of the issue, and steps to reproduce (if applicable).
+      </p>
+    </section>
 
-  <h2>Support Contact</h2>
-  <p>
-    Email: <a href="mailto:moh.tarek29@gmail.com">moh.tarek29@gmail.com</a><br />
-    LinkedIn: <a href="https://www.linkedin.com/in/moh-tarek29/" target="_blank">Mohamed Tarek</a>
-  </p>
-
-  <p class="small">© 2026 Mohamed Tarek</p>
-
+    <footer>
+      <div class="wrap" style="padding:0;">
+        © 2026 Mohamed Tarek — EToolKit for Revit
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
