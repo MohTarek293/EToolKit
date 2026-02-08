@@ -1,113 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - EToolKit</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EToolKit for Revit — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for EToolKit for Autodesk Revit." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      color: #222;
-    }
-    nav {
-      padding: 14px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      background: #fafafa;
-      margin: 20px 0;
-    }
-    nav a {
-      margin-right: 14px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #0b57d0;
-    }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 980px; margin: 36px auto; padding: 0 18px; color: #111; line-height: 1.55; }
+    header { border-bottom: 1px solid #e9e9e9; padding-bottom: 14px; margin-bottom: 18px; }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; }
+    nav a { text-decoration: none; font-weight: 600; color: #0b57d0; }
     nav a:hover { text-decoration: underline; }
-    code {
-      background: #f2f2f2;
-      padding: 2px 6px;
-      border-radius: 6px;
-    }
+    .muted { color: #666; }
+    .card { border: 1px solid #ededed; border-radius: 14px; padding: 16px 16px; margin: 14px 0; background: #fff; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 8px; }
+    ul { margin: 10px 0 0 18px; }
+    h1 { margin: 0; }
+    h2 { margin-top: 22px; }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="muted"><strong>Last updated:</strong> 2026-02-08</p>
+    <nav aria-label="Primary">
+      <a href="index.html">Documentation</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="eula.html">EULA</a>
+    </nav>
+  </header>
 
-  <h1>Privacy Policy</h1>
-  <p><b>Last updated:</b> 2026-02-08</p>
+  <div class="card">
+    <p>
+      EToolKit (“<strong>the Add-in</strong>”) is a desktop add-in for Autodesk Revit developed by Mohamed Tarek (“<strong>Developer</strong>”, “we”, “us”).
+      This Privacy Policy explains how information is handled when you use EToolKit.
+    </p>
+  </div>
 
-  <nav>
-    <a href="index.html">Help</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="eula.html">EULA</a>
-  </nav>
+  <h2>1. Key Points</h2>
+  <ul>
+    <li><strong>No telemetry or analytics</strong> are collected by the Developer.</li>
+    <li><strong>No Revit model content</strong> is transmitted to the Developer.</li>
+    <li>Optional features may open or interact with <strong>third-party services</strong> (Autodesk, Google, GitHub), which operate under their own policies.</li>
+  </ul>
 
-  <p>
-    EToolKit (“the Add-in”) is a desktop add-in for Autodesk Revit developed by Mohamed Tarek (“Developer”, “we”, “us”).
-  </p>
-
-  <p>This Privacy Policy explains how information is handled when you use EToolKit.</p>
-
-  <h2>1. Summary</h2>
-  <p>
-    EToolKit does <b>not</b> collect or store Revit model data, personal information, analytics, or telemetry <b>for the Developer</b>.
-  </p>
-  <p>
-    However, EToolKit may interact with <b>third-party services</b> (Autodesk, Google, GitHub) when you use certain optional features,
-    and those services may process data under their own privacy policies.
-  </p>
-
-  <h2>2. Data We Do Not Collect</h2>
+  <h2>2. Information the Developer Does Not Collect</h2>
+  <p>The Developer does not collect, store, or process:</p>
   <ul>
     <li>Revit model files or model content</li>
-    <li>Personal information (name, email, phone, etc.)</li>
-    <li>Usage analytics or telemetry controlled by the Developer</li>
+    <li>Personal information (such as name, email, phone number)</li>
+    <li>Usage analytics/telemetry controlled by the Developer</li>
   </ul>
 
   <h2>3. Third-Party Services</h2>
 
   <h3>3.1 Autodesk Entitlement API (Licensing Validation)</h3>
   <p>
-    If EToolKit is distributed through Autodesk App Store with trial/subscription licensing,
-    the Add-in may validate your entitlement by calling Autodesk’s entitlement endpoint:
+    If EToolKit is distributed through the Autodesk App Store with trial/subscription licensing, the Add-in may validate your entitlement
+    by calling Autodesk’s entitlement endpoint:
   </p>
   <p><code>https://apps.autodesk.com/webservices/checkentitlement</code></p>
-  <p>
-    <b>Data involved:</b> your Autodesk signed-in user identifier (LoginUserId) and the AppId used for entitlement validation.<br/>
-    <b>Processed by:</b> Autodesk (not the Developer).
+  <p class="muted">
+    Data involved may include your Autodesk signed-in user identifier (e.g., LoginUserId) and the AppId used for validation.
+    This processing is performed by Autodesk, not the Developer, and is governed by Autodesk’s privacy statement and terms.
   </p>
 
-  <h3>3.2 Feedback / New Ideas Forms (Google Forms)</h3>
+  <h3>3.2 Feedback / Feature Requests (Google Forms)</h3>
   <p>
-    EToolKit includes optional buttons that open Google Forms (for feedback and feature requests) in your web browser.
-  </p>
-  <p>
-    Submitting a form is optional. Any information you provide in the form is processed by Google and the form owner.
+    EToolKit may include optional buttons that open a feedback or feature request form in your browser (e.g., Google Forms).
+    Submitting any form is voluntary. Any information you provide is processed by the third-party provider and/or form owner under their policies.
   </p>
 
-  <h3>3.3 Documentation Website (GitHub Pages)</h3>
+  <h3>3.3 Documentation Hosting (GitHub Pages)</h3>
   <p>
-    EToolKit documentation and policy pages may be hosted on GitHub Pages.
-  </p>
-  <p>
-    When you open these pages, GitHub may receive standard web request data (such as IP address and browser information).
+    Documentation and policy pages may be hosted using GitHub Pages. When you visit these pages, GitHub may receive standard web request
+    information (such as IP address, user agent, and request logs) as part of normal website operation.
   </p>
 
   <h2>4. Local Storage</h2>
   <p>
-    EToolKit may store a local entitlement cache file on your device to reduce repeated license checks and improve performance.
+    EToolKit may store a local entitlement cache on your device to reduce repeated license checks and improve performance.
+    Example location:
   </p>
-  <p>Example location:</p>
   <p><code>%LOCALAPPDATA%\EToolKit\entitlement_cache.json</code></p>
-  <p>This cache is stored only on your device.</p>
+  <p class="muted">This cache is stored locally on your machine and is not sent to the Developer.</p>
 
   <h2>5. Security</h2>
   <p>
-    EToolKit does not include spyware, malware, or tracking code.<br/>
-    Network requests (such as entitlement validation) are made over HTTPS.
+    EToolKit does not include spyware, malware, or tracking code. Network requests (such as entitlement validation) are made over HTTPS.
   </p>
 
   <h2>6. Children’s Privacy</h2>
@@ -115,18 +96,14 @@
 
   <h2>7. Changes to This Policy</h2>
   <p>
-    We may update this Privacy Policy from time to time.<br/>
-    The “Last updated” date at the top will reflect the latest version.
+    The Developer may update this Privacy Policy from time to time. The “Last updated” date at the top will reflect the latest version.
   </p>
 
-  <h2>8. Contact Information</h2>
+  <h2>8. Contact</h2>
   <p>
-    Support Email: <a href="mailto:moh.tarek29@gmail.com">moh.tarek29@gmail.com</a><br/>
-    Developer: Mohamed Tarek<br/>
-    LinkedIn: <a href="https://www.linkedin.com/in/moh-tarek29/" target="_blank">
-      https://www.linkedin.com/in/moh-tarek29/
-    </a>
+    For privacy questions or support:
+    <br /><strong>Email:</strong> <a href="mailto:moh.tarek29@gmail.com">moh.tarek29@gmail.com</a>
+    <br /><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/moh-tarek29/" target="_blank" rel="noopener">Mohamed Tarek</a>
   </p>
-
 </body>
 </html>
